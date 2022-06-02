@@ -43,6 +43,7 @@ apiRouter.post("/smallest", function (req: Request, res: Response) {
       return res.status(200).json({
         method: req.method,
         status: res.statusCode,
+        resultArray: missing,
         result: minNum
       });
     }
