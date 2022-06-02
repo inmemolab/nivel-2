@@ -9,7 +9,7 @@ yarn install
 ## Para iniciar
 
 ```bash
- yarn server
+ yarn start
 ```
 
 ## Ruta api /smallest POST en local

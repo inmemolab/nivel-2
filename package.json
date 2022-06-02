@@ -14,7 +14,7 @@
   },
   "license": "ISC",
   "scripts": {
-    "server": "nodemon --config nodemon src/server.ts"
+    "start": "nodemon --config nodemon src/server.ts"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
@@ -36,5 +36,8 @@
     "prettier": "^2.6.2",
     "ts-node": "^10.8.0",
     "typescript": "^4.7.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
