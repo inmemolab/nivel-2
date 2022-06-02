@@ -36,4 +36,10 @@ yarn install
 https://keo-test-2.herokuapp.com/api/smallest
 ```
 
+## sample body POST
+
+```bash
+{"array": [1,3,6,4,1,2,20,60]}
+```
+
 ### se mostrara en consola los resultados
