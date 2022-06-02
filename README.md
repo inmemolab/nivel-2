@@ -30,4 +30,10 @@ yarn install
  http://localhost:3000/api/smallest
 ```
 
+## Ruta api /smallest POST en Heroku
+
+```bash
+https://keo-test-2.herokuapp.com/api/smallest
+```
+
 ### se mostrara en consola los resultados
