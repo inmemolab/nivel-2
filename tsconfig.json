@@ -1,42 +1,12 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "target": "ESNext",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
+    "outDir": "./build",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false,
-    "resolveJsonModule": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    "pretty": true,
-    "declaration": true,
-    "noEmit": false,
-    "importHelpers": true,
-    "allowJs": true,
-    "removeComments": true,
-    "skipLibCheck": true,
-    "lib": ["ESNext", "esnext.asynciterable"],
-    "outDir": "./dist",
-    "rootDir": "./",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"],
-      "@/*": ["src/*"]
-    },
-    "typeRoots": ["node_modules/@types", "@types"],
-    "types": ["@types/node", "@types/express"]
+    "strict": true,
+    "skipLibCheck": true
   },
-  "ts-node": {
-    "files": true
-  },
-  "include": [
-    "types/**/*.d.ts",
-    "types/**/*.ts",
-    "src/server.ts"
-  ],
-  "exclude": ["node_modules", "dist", "**/*.md", "src/**/*.md"]
+  "include": ["src/**/*"]
 }

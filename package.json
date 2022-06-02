@@ -13,8 +13,11 @@
     "url": "https://enmemolab.com"
   },
   "license": "ISC",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "nodemon --config nodemon src/server.ts"
+    "dev": "nodemon --config nodemon src/server.ts",
+    "build": "tsc -p .",
+    "start": "node build/server.js"
   },
   "dependencies": {
     "body-parser": "^1.20.0",

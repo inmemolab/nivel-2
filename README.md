@@ -6,7 +6,19 @@
 yarn install
 ```
 
-## Para iniciar
+## Para iniciar DEV (LocalHost)
+
+```bash
+ yarn dev
+```
+
+## Para iniciar Build PROD
+
+```bash
+ yarn build
+```
+
+## Para iniciar Prod (Heroku)
 
 ```bash
  yarn start
