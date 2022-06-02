@@ -7,6 +7,7 @@ const apiRouter = (0, express_1.Router)();
 // routes api
 apiRouter.post("/smallest", function (req, res) {
     const { array } = req.body;
+    // si hay un array
     if (array) {
         // ordenamos
         array.sort();
@@ -18,6 +19,8 @@ apiRouter.post("/smallest", function (req, res) {
         // console.log("Min: ", min);
         // array para los que faltan
         const missing = [];
+        // obtenemos el minimo
+        let minNum = 0;
         // primer condicional
         if (min >= -1000000 && max <= 1000000) {
             // si el max es menor que sero devuelve 1
@@ -34,13 +37,15 @@ apiRouter.post("/smallest", function (req, res) {
                     if (!array.includes(i) && i >= 1 && max <= 1000000) {
                         // push a los que faltan
                         missing.push(i);
+                        //console.log("array nums: ", missing);
+                        minNum = Math.min(...missing);
                     }
                 }
             }
             return res.status(200).json({
                 method: req.method,
                 status: res.statusCode,
-                result: missing
+                result: minNum
             });
         }
     }
