@@ -1,7 +1,7 @@
 {
-  "name": "keo-test-fullstack-t1",
+  "name": "keo-test-fullstack-t2",
   "version": "1.0.0",
-  "description": "Prueba de full-Stack test 1",
+  "description": "Prueba de full-Stack test 2",
   "keywords": [
     "node",
     "express",
