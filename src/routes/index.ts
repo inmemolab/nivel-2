@@ -7,6 +7,7 @@ const apiRouter = Router();
 // routes api
 apiRouter.post("/smallest", function (req: Request, res: Response) {
   const { array }: ArrayDTO = req.body;
+  // si hay un array
   if (array) {
     // ordenamos
     array.sort();
